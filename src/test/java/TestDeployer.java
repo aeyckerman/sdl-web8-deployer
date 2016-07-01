@@ -5,6 +5,9 @@ import static java.lang.Thread.sleep;
 
 /**
  * Created by aeyckerm on 28/06/16.
+ * @author Arthur Eyckerman (arthur@aeyckerman.com)
+ * @version 0.1
+ * @since 0.1
  */
 public class TestDeployer {
 

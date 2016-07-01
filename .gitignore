@@ -1,1 +1,4 @@
 *.iml
+.idea/
+deployer_start.sh
+deployer_stop.sh

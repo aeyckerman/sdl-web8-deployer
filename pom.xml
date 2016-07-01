@@ -14,67 +14,70 @@
         <build.time>pc-build-now</build.time>
 
         <cd.version>8.1.1</cd.version>
-        <deployer.version>8.1.1-1008</deployer.version>
-        <discovery.version>8.1.1-1009</discovery.version>
-        <delivery.version>8.1.1-1007</delivery.version>
+        <deployer.version>${cd.version}-1008</deployer.version>
+        <discovery.version>${cd.version}-1009</discovery.version>
+        <delivery.version>${cd.version}-1007</delivery.version>
         <license.version>2.5</license.version>
+
+        <spring.version>4.3.0.RELEASE</spring.version>
+        <spring-boot.version>1.2.5.RELEASE</spring-boot.version>
     </properties>
 
     <dependencies>
         <!-- Tridion Dependencies -->
         <!-- Tridion core libraries in your local Maven Repository -->
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_cache</artifactId>
             <version>${cd.version}-1005</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_common_config</artifactId>
             <version>${cd.version}-1002</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_common_config_api</artifactId>
             <version>${cd.version}-1002</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_common_config_legacy</artifactId>
             <version>${cd.version}-1002</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_core</artifactId>
             <version>${cd.version}-1005</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_datalayer</artifactId>
             <version>${cd.version}-1005</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_deployer</artifactId>
             <version>${cd.version}-1008</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_model</artifactId>
             <version>${cd.version}-1005</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_tcdl</artifactId>
             <version>${cd.version}-1005</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_undo</artifactId>
             <version>${cd.version}-1008</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.cd</groupId>
             <artifactId>cd_wrapper</artifactId>
             <version>${cd.version}-1008</version>
         </dependency>
@@ -95,37 +98,37 @@
         # deployer-model-8.1.1-1008.jar
         -->
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.deployer</groupId>
             <artifactId>deployer-api</artifactId>
             <version>${deployer.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.deployer</groupId>
             <artifactId>deployer-config</artifactId>
             <version>${deployer.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.deployer</groupId>
             <artifactId>deployer-endpoint-controller</artifactId>
             <version>${deployer.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.deployer</groupId>
             <artifactId>deployer-queue</artifactId>
             <version>${deployer.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.deployer</groupId>
             <artifactId>deployer-binary-storage</artifactId>
             <version>${deployer.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.deployer</groupId>
             <artifactId>deployer-controller</artifactId>
             <version>${deployer.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.deployer</groupId>
             <artifactId>deployer-model</artifactId>
             <version>${deployer.version}</version>
         </dependency>
@@ -136,17 +139,17 @@
         # discovery-registration-api-8.1.1-1009.jar
         -->
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.discovery</groupId>
             <artifactId>discovery-common</artifactId>
             <version>${discovery.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.discovery</groupId>
             <artifactId>discovery-client-lightweight</artifactId>
             <version>${discovery.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.tridion</groupId>
+            <groupId>com.sdl.discovery</groupId>
             <artifactId>discovery-registration-api</artifactId>
             <version>${discovery.version}</version>
         </dependency>
@@ -184,37 +187,32 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.3.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
-            <version>1.3.5.RELEASE</version>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator</artifactId>
-            <version>1.3.5.RELEASE</version>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>1.3.5.RELEASE</version>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <version>1.3.5.RELEASE</version>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>1.3.5.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-dependencies</artifactId>
-            <version>1.3.5.RELEASE</version>
+            <version>${spring-boot.version}</version>
         </dependency>
     </dependencies>
 
