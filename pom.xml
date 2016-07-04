@@ -4,8 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tridion.web8</groupId>
-    <artifactId>custom-deployer</artifactId>
+    <developers>
+        <developer>
+            <name>Arthur Eyckerman</name>
+            <email>arthur@aeyckerman.com</email>
+            <url>https://github.com/aeyckerman</url>
+        </developer>
+    </developers>
+
+    <groupId>com.sdl</groupId>
+    <artifactId>web8-deployer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!--Set as appropriate to your project-->
@@ -19,7 +27,7 @@
         <delivery.version>${cd.version}-1007</delivery.version>
         <license.version>2.5</license.version>
 
-        <spring.version>4.3.0.RELEASE</spring.version>
+        <spring.version>4.1.7.RELEASE</spring.version>
         <spring-boot.version>1.2.5.RELEASE</spring-boot.version>
     </properties>
 
@@ -170,20 +178,22 @@
             <scope>test</scope>
         </dependency>
         <!-- Spring -->
-<!--        spring-aop-4.1.7.RELEASE.jar
-        spring-beans-4.1.7.RELEASE.jar
-        spring-boot-1.2.5.RELEASE.jar
-        spring-boot-actuator-1.2.5.RELEASE.jar
-        spring-boot-autoconfigure-1.2.5.RELEASE.jar
-        spring-boot-starter-1.2.5.RELEASE.jar
-        spring-boot-starter-logging-1.2.5.RELEASE.jar
-        spring-boot-starter-tomcat-1.2.5.RELEASE.jar
-        spring-boot-starter-web-1.2.5.RELEASE.jar
-        spring-context-4.1.7.RELEASE.jar
-        spring-core-4.1.7.RELEASE.jar
-        spring-expression-4.1.7.RELEASE.jar
-        spring-web-4.1.7.RELEASE.jar
-        spring-webmvc-4.1.7.RELEASE.jar-->
+        <!--
+        # spring-aop-4.1.7.RELEASE.jar
+        # spring-beans-4.1.7.RELEASE.jar
+        # spring-boot-1.2.5.RELEASE.jar
+        # spring-boot-actuator-1.2.5.RELEASE.jar
+        # spring-boot-autoconfigure-1.2.5.RELEASE.jar
+        # spring-boot-starter-1.2.5.RELEASE.jar
+        # spring-boot-starter-logging-1.2.5.RELEASE.jar
+        # spring-boot-starter-tomcat-1.2.5.RELEASE.jar
+        # spring-boot-starter-web-1.2.5.RELEASE.jar
+        # spring-context-4.1.7.RELEASE.jar
+        # spring-core-4.1.7.RELEASE.jar
+        # spring-expression-4.1.7.RELEASE.jar
+        # spring-web-4.1.7.RELEASE.jar
+        # spring-webmvc-4.1.7.RELEASE.jar
+        -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>

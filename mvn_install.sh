@@ -2,13 +2,14 @@
 
 # Make sure maven can be executed from your PATH
 export OLD_PATH=${PATH}
-#   export PATH=${PATH}:C:\apache\apache-maven-3.0.4\bin
+#   export PATH=${PATH}:/opt/apache/apache-maven-3.0.4/bin
 
 # Set your JAVA_HOME directory
-#   SET JAVA_HOME=C:\Program Files\Java\jdk1.6.0_25
+#   export JAVA_HOME=[JDK Home]
 
 # Set your variables
-export LIB_DIR=/Users/aeyckerm/SDL/deployer/services/deployer-service
+export LIB_DIR=/opt/sdl/web8/deployer/services/deployer-service
+export LIB_SERVICE_DIR=/opt/sdl/web8/deployer/lib
 
 # Install Tridion core libraries in your local Maven Repository
 
@@ -67,7 +68,7 @@ mvn install:install-file -Dfile="${LIB_DIR}/discovery-common-8.1.1-1009.jar" -Dg
 mvn install:install-file -Dfile="${LIB_DIR}/discovery-registration-api-8.1.1-1009.jar" -DgroupId=com.sdl.discovery -DartifactId=discovery-registration-api -Dversion=8.1.1-1009 -Dpackaging=jar
 
 # Install SDL Web 8 Service Container
-mvn install:install-file -Dfile="/Users/aeyckerm/SDL/deployer/lib/service-container-core-8.1.1-1007.jar" -DgroupId=com.sdl -DartifactId=service-container-core -Dversion=8.1.1-1007 -Dpackaging=jar
+mvn install:install-file -Dfile="${LIB_SERVICE_DIR}/service-container-core-8.1.1-1007.jar" -DgroupId=com.sdl -DartifactId=service-container-core -Dversion=8.1.1-1007 -Dpackaging=jar
 
 # Restore Variable
 export PATH=${OLD_PATH}
